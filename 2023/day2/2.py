@@ -7,7 +7,7 @@ max_green = 13
 max_blue = 14
 
 sum = 0
-with open('2023/2.csv', newline='') as csv_file:
+with open('2.csv', newline='') as csv_file:
     reader = csv.reader(csv_file)
     for gameNbr, game in enumerate(reader):
         valid = True
@@ -38,7 +38,7 @@ print(f'Sum of valid IDs: {sum}')
 
 # Task 2
 sum = 0
-with open('2023/2.csv', newline='') as csv_file:
+with open('2.csv', newline='') as csv_file:
     reader = csv.reader(csv_file)
     for gameNbr, game in enumerate(reader):
         min_red = 0
@@ -64,7 +64,7 @@ with open('2023/2.csv', newline='') as csv_file:
                 if c == ';':
                     nbr_cubes = ''
                     nbr = 0
-        print(f' {min_red}   {min_green}   {min_blue}')
+        #print(f' {min_red}   {min_green}   {min_blue}')
         sum += min_red * min_green * min_blue
         
 print(f'Sum of power of IDs: {sum}')
