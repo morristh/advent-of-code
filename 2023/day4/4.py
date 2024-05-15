@@ -1,6 +1,6 @@
 import re
 
-with open('input4.txt', 'r') as file:
+with open('input4+.txt', 'r') as file:
     input = file.readlines()
 
 pointSum = 0
